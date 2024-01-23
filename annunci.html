@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annunci</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <!-- Inizio navbar -->
+    <nav id="barraTop" class="transition navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Presto JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                 <a class="nav-link text-white" href="#">Annunci</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link text-white" href="#">About us</a>
+                </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorie
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contatti</a>
+                </li>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li><i class="bi bi-person-fill fs-4 text-white me-2"></i></li>
+                <li><i class="bi bi-cart-fill fs-4 text-white"></i></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Fine navbar -->
+
+    <!-- Inizio Annunci -->
+    <section class="container-fluid mt-5">
+        <div class="row my-5">
+            <!-- Sezione filtri -->
+            <div class="col-4">
+
+                <div class="divFiltro">
+                  <div class="col-12">
+                      <h2>Imposta i filtri</h2>
+                  </div>
+  
+                  <!-- Filtro -->
+                  <div>
+                      <div id="containerRadio">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="All">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Tutte le categorie
+                              </label>
+                          </div>
+                      </div>
+  
+                      <div class="mt-5 pe-5">
+                          <h3 class="color-p">Filtro per prezzo</h3>
+                          <label id="price" for="customRange1" class="form-label">Prezzo</label>
+                          <input type="range" class="form-range" id="inputPrice" value="" max="" min="">
+                      </div>
+  
+                      <h3 class="color-p my-4">Filtro per parola</h3>
+                      <input id="wordInput" class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Ricerca">
+  
+                  </div>
+
+                </div>
+
+            </div>
+
+            <!-- Sezione articoli -->
+            <div class="col-12 col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center mt-5">Scegli fra i migliori articoli</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="cardWrapper"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Annunci -->
+ 
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- My JS -->
+    <script src="./annunci.js"></script>
+  </body>
+</html>

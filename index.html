@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto JS</title>
+    <!-- Swiper CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+
+    <!-- Inizio navbar -->
+    <nav id="barraTop" class="transition navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Presto JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                 <li class="nav-item">
+                 <a class="nav-link text-white" href="./annunci.html">Annunci</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link text-white" href="#">About us</a>
+                </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorie
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contatti</a>
+                </li>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li><i class="bi bi-person-fill fs-4 text-white me-2"></i></li>
+                <li><i class="bi bi-cart-fill fs-4 text-white"></i></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Fine navbar -->
+
+    <!-- Inizio Masthead -->
+    <div class="container-fluid masthead d-flex align-items-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-5 p-5">
+                <h2 class="text-white">Titolo principale</h2>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam fuga impedit aspernatur optio quis vel at porro provident magni, ipsam laborum soluta corporis vero sapiente corrupti fugiat! Maxime, molestiae impedit?</p>
+                <a class="btn btn-warning">Compra ora</a>
+                <a class="btn btn-warning">Esplora</a>
+            </div>
+            <div class="col-5 p-5">
+                <img class="immagini" src="https://picsum.photos/300" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Fine Masthead -->
+
+    <!-- Inizio Header -->
+    <div class="container-fluid mt-5">
+
+        <!-- CARD -->
+        <div id="cardWrapper" class="row justify-content-center">
+            <h2 class="text-primary display-1 text-center mt-5">Le novità</h2>
+            <!-- <div id="creaCard" class="col-4 d-flex justify-content-center my-5">
+                <div class="card border-primary" style="width: 18rem;">
+                    <img class="fotoCard transition" src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <i class="bi bi-heart fs-3 text-primary me-2"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div> -->
+        </div>
+
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-10 mt-5">
+                <h2 id="hideBar" class="text-center text-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum amet enim corporis saepe fugit ratione perferendis! Inventore maxime accusantium ad, reiciendis, at sed ea, quam nisi quo harum sint exercitationem.</h2>
+                <h2 class="text-primary display-1 text-center mt-5">CATEGORIE</h2>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1100">
+                <img class="immagini" src="https:/picsum.photos/200" alt="">
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1100" data-aos-delay="100">
+                <img class="immagini" src="https:/picsum.photos/201" alt="">
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200">
+                <img class="immagini" src="https:/picsum.photos/202" alt="">
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
+                <img class="immagini" src="https:/picsum.photos/203" alt="">
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="flip-down" data-aos-duration="1100" data-aos-delay="400">
+                <img class="immagini" src="https:/picsum.photos/204" alt="">
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="500">
+                <img class="immagini" src="https:/picsum.photos/205" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-6 col-md-3 mx-2 my-5 bg-primary rounded-3 pt-3 d-flex flex-column align-items-center">
+                <h3 class="text-white">Articoli</h3>
+                <p><span id="articlesNumber" class="text-warning fs-2">0</span></p>
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 bg-primary rounded-3 pt-3 d-flex flex-column align-items-center">
+                <h3 class="text-white">Utenti</h3>
+                <p><span id="usersNumber" class="text-warning fs-2">0</span></p>
+            </div>
+            <div class="col-6 col-md-3 mx-2 my-5 bg-primary rounded-3 pt-3 d-flex flex-column align-items-center">
+                <h3 class="text-white">Prodotti Totali</h3>
+                <p><span id="productsNumber" class="text-warning fs-2">0</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- Fine Header -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Pinco</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Tom</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Titti</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Jerry</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Silvestro</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 swiperCards d-flex flex-column align-items-center">
+                        <h3 class="text-primary">Willie</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam at ab facere ex voluptatum</p>
+                        <img class="immagini" src="https://picsum.photos/50" alt="" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Fine swiper -->
+
+      <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted mt-5">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            </section>
+
+            <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3 text-secondary"></i>Fierry & co.
+                    </h6>
+                    <p>
+                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+        
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                    <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                </div>
+                </div>
+            </div>
+            </section>
+        
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Fiestish</a>
+            </div>
+        </footer>
+        <!-- Footer -->
+ 
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- My JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+

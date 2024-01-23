@@ -1,0 +1,65 @@
+:root{
+    --color-p: #2F6EFD;
+    --color-s: white;
+    --color-a: #30363D;
+}
+
+.masthead{
+    height: 80vh;
+    background-color: var(--color-p);
+    padding-top: 50px;
+}
+
+.immagini{
+    border: 3px solid var(--color-a);
+    padding:2px;
+    border-radius: 50%;
+    background-color: gold;
+}
+
+.barraCustom{
+    margin: 5vh 10vh;
+    background-color: #071b4b85 !important;
+    border-radius: 10px;
+    border: solid 2px gold;
+    backdrop-filter: blur(10px);
+}
+
+.transition{
+    transition: 1s;
+}
+
+.card{
+    overflow: hidden;
+    width: 18rem;
+}
+
+.fotoCard{
+    width: auto;
+}
+
+.fotoCard:hover{
+    transform: scale(1.10);
+}
+
+.divFiltro{
+    position: fixed;
+    top: 5vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+  .swiperCards{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    max-width: 100%;
+    padding: 10%;
+  }
